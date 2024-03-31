@@ -1,0 +1,43 @@
+<div class="container-fluid container-fluid-custom pb-5 mb-5">
+
+    <div class="row mb-4">
+        <div class="col">
+            <nav aria-label="breadcrum">
+                <ol class="breadcrum">
+                    <li class="breadcrum-item">
+                        <a href="/dashboard">Go Back</a>
+                    </li>
+                </ol>
+            </nav>
+            <div class="col d-flex justify-content-between align-items-center">
+                <h1 class="h3">Add New Note</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add New Notes -->
+
+    <form action="/dashboard/add" method="POST" class="position-relative">
+
+        <div class="form-group mb-4 position-absolute" style="left: 1px; top: 1px; right: 1px;">
+
+            <input type="text" name="title" class="form-control fw-bold border-0 fs-4" id="title" placeholder="Title your Note"
+                required>
+        </div> <br><br>
+
+        <!-- <div class="form-group ">
+            <textarea class="form-control pt-5 fs-4" name="body" id="body" rows="10"
+                placeholder="Write your notes here...." required> </textarea>                
+        </div>  -->
+
+        <div class="form-group">
+            <textarea type="text" class="form-control pt-5 fs-4" rows="10" placeholder="Write your notes here...." name="body" id="body" style="height: 400px;" required></textarea>
+        </div> <br>
+        
+    
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg"> Add Note</button>
+        </div>
+    </form>
+</div>
